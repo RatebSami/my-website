@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products - RsellShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../bag.css">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="../index.html" style="text-decoration: none;">
+            <span class="logo-text">Rsell<span class="logo-accent">Shop</span></span>
+          </a>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="../index.html#home" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="../index.html#services" class="nav-link">Best Seller</a></li>
+          <li class="nav-item"><a href="../index.html#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="../index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <main class="product-main">
+      <!-- Breadcrumb -->
+      <section class="breadcrumb">
+        <div class="container">
+          <nav class="breadcrumb-nav">
+            <a href="../index.html">Home</a>
+            <span class="breadcrumb-separator">></span>
+            <a href="../index.html#services">Shop</a>
+            <span class="breadcrumb-separator">></span>
+            <span class="breadcrumb-current" id="breadcrumb-product">Product</span>
+          </nav>
+        </div>
+      </section>
+
+      <!-- Product Details -->
+      <section class="product-details">
+        <div class="container">
+          <div class="product-content">
+            <!-- Product Info -->
+            <div class="product-info">
+              <div class="product-header">
+                <h1 class="product-title" id="product-title">Kalort Women’s 316L Stainless Insulated Mug</h1>
+                <div class="product-rating">
+                  <div class="stars">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                  </div>
+                  <span class="rating-text">(4.9/5 - 98 reviews)</span>
+                </div>
+              </div>
+
+              <div class="product-price">
+                <span class="price-current" id="product-price">$26</span>
+                <span class="price-original"></span>
+                <span class="price-discount">0% OFF</span>
+              </div>
+
+              <div class="product-description">
+                <h3>Description</h3>
+                <p id="product-description">
+                  Modern, responsive websites built with the latest technologies and best practices for optimal performance. Our web development service includes custom design, responsive layouts, and cutting-edge functionality.
+                </p>
+              </div>
+
+              <div class="product-features">
+                <h3>What's Included</h3>
+                <ul id="product-features">
+                  <li>React & Vue.js Development</li>
+                  <li>Node.js Backend Integration</li>
+                  <li>Progressive Web App Features</li>
+                  <li>Responsive Design</li>
+                  <li>SEO Optimization</li>
+                  <li>6 Months Support</li>
+                </ul>
+              </div>
+
+              <div class="product-options">
+                <div class="option-group">
+                  <label for="package-select">Color:</label>   
+                  <select id="package-select" class="package-select">
+                    <option value="basic">Mocha Brown</option>
+                  </select>
+                </div>
+
+                <div class="option-group">
+                  <!-- <label for="timeline-select">Timeline:</label>
+                  <select id="timeline-select" class="timeline-select">
+                    <option value="standard">Standard (4-6 weeks)</option>
+                    <option value="rush">Rush (2-3 weeks) +$500</option>
+                    <option value="express">Express (1-2 weeks) +$1000</option>
+                  </select> -->
+                </div>
+              </div>
+
+              <div class="product-actions">
+                <a href="https://buy.stripe.com/7sY28s1yE2KJaph68l8IU06"><button class="btn btn-primary btn-buy" id="buy-btn">
+                  <span class="btn-icon">🛒</span>
+                  Buy Now
+                </button></a>
+                <button class="btn btn-secondary btn-quote">
+                  Get Quote
+                </button>
+                <button class="btn btn-outline btn-wishlist">
+                  <span class="btn-icon">♡</span>
+                  Save
+                </button>
+              </div>
+
+              <div class="product-guarantee">
+                <div class="guarantee-item">
+                  <span class="guarantee-icon">✓</span>
+                  <span>delivery Time: 6-12 Working Days</span>
+                </div>
+                <div class="guarantee-item">
+                  <span class="guarantee-icon">🚀</span>
+                  <span>Fast delivery</span>
+                </div>
+                <div class="guarantee-item">
+                  <span class="guarantee-icon">🛡️</span>
+                  <span>Secure payment</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Gallery -->
+            <div class="product-gallery">
+              <div class="gallery-main">
+                <img id="main-image" src="Products/Woodpecker/Images/main.png" alt="Product Image" class="main-image">
+                <div class="image-controls">
+                  <button class="control-btn prev-btn" id="prev-btn">‹</button>
+                  <button class="control-btn next-btn" id="next-btn">›</button>
+                </div>
+              </div>
+              
+              <div class="gallery-thumbnails">
+                <div class="thumbnail active" data-image="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800">
+                  <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Thumbnail 1">
+                </div>
+                <div class="thumbnail" data-image="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=800">
+                  <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Thumbnail 2">
+                </div>
+                <div class="thumbnail" data-image="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=800">
+                  <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Thumbnail 3">
+                </div>
+                <div class="thumbnail" data-image="https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=800">
+                  <img src="https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Thumbnail 4">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Related Products 
+      <section class="related-products">
+        <div class="container">
+          <h2 class="section-title">Related Services</h2>
+          <div class="related-grid">
+            <div class="related-card" data-service="mobile">
+              <div class="related-image">
+                <img src="https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Mobile Apps">
+              </div>
+              <h3>Mobile Apps</h3>
+              <p class="related-price">From $3,999</p>
+            </div>
+            <div class="related-card" data-service="design">
+              <div class="related-image">
+                <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=400" alt="UI/UX Design">
+              </div>
+              <h3>UI/UX Design</h3>
+              <p class="related-price">From $1,999</p>
+            </div>
+            <div class="related-card" data-service="cloud">
+              <div class="related-image">
+                <img src="https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Cloud Solutions">
+              </div>
+              <h3>Cloud Solutions</h3>
+              <p class="related-price">From $2,499</p>
+            </div>
+          </div>
+        </div>
+      </section>-->
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <span class="logo-text">Rsell <span class="logo-accent">Shop</span></span>
+            <p>Your market, Just one click away!</p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-section">
+              <h4>Best Seller</h4>
+              <ul>
+                <li><a href="#">Kalort Women’s 316L Stainless Insulated Mug</a></li>
+                <li><a href="#">New Arrivals</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="../index.html#about">About Us</a></li>
+                <li><a href="../index.html#team">Our Team</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h4>Connect</h4>
+              <ul>
+                <li><a href="https://x.com/rsellshop">Twitter</a></li>
+                <li><a href="https://wa.me/message/4ZNLIUH2S5WJC1">WhatsApp</a></li>
+                <li><a href="https://www.instagram.com/rsell_ratebsami/">Instagram</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Rsell Shop. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="ZUODU Premium Auto Folding Umbrella.js"></script>
+  </body>
+</html>
